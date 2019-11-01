@@ -11,6 +11,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+import {HttpClientModule} from "@angular/common/http";
+import {MixerChannelService} from "./mixer-channel.service";
+import {MixerChannel} from "./mixer-channel";
 
 
 @NgModule({
@@ -27,8 +30,12 @@ import { ExamplesModule } from './examples/examples.module';
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
+      HttpClientModule
   ],
-  providers: [],
+  providers: [
+      MixerChannel,
+      MixerChannelService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

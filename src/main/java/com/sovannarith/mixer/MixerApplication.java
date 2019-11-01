@@ -1,10 +1,9 @@
 package com.sovannarith.mixer;
 
 import com.mixer.api.MixerAPI;
-import com.mixer.api.services.impl.ChannelsService;
 import com.sovannarith.mixer.model.User;
 import com.sovannarith.mixer.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.sovannarith.mixer.service.impl.ChannelsService;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.CommandLineRunner;
@@ -26,7 +25,7 @@ public class MixerApplication implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         ChannelsService channelsService = new ChannelsService(mixer);
-        channelsService.findOneByToken("");
+        channelsService.findOneByToken("JaredFPS");
     }
 
     @Bean

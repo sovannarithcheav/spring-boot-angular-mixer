@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MixerChannelService} from "../../mixer-channel.service";
+import {MixerChannel} from "../../mixer-channel";
 
 @Component({
     selector: 'app-typography',
@@ -7,8 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TypographyComponent implements OnInit {
 
-  constructor() { }
+    mixerChannel: MixerChannel;
 
-  ngOnInit() {}
+    constructor(private mixerChannelService: MixerChannelService) {
+    }
+
+    ngOnInit() {
+        this.mixerChannelService.findAll().subscribe(data => {
+            this.mixerChannel = data;
+        });
+    }
 
 }
