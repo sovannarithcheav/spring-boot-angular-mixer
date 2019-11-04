@@ -23,7 +23,7 @@ public class UserController {
 
     @GetMapping("/users")
     public MixerChannel getUsers() throws ExecutionException, InterruptedException {
-        return channelsService.findOneByToken("JaredFPS").get();
+        return channelsService.findOneByToken("ninja").get();
     }
 /*
     @GetMapping("/users")
