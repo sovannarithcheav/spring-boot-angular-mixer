@@ -7,5 +7,6 @@ export class MixerChannel {
     };
     user: {
         avatarUrl: string;
+        username: string;
     }
 }

@@ -5,14 +5,63 @@
                 <div class="row">
                     <div class="col-xs-8 col-sm-6 col-md-3">
                         <h4 class="images-title">{{mixerChannel?.token}} </h4>
-                        <img src="{{mixerChannel?.bannerUrl}}" class="img-rounded img-responsive" alt="Rounded Image">
+                        <img src="{{mixerChannel?.user.avatarUrl}}" class="img-rounded img-responsive" alt="Rounded Image">
                         <div class="img-details">
                             <div class="author">
-                                <img src="https://uploads.mixer.com/avatar/jbls4lci-389804.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                <img src="{{mixerChannel?.thumbnail.url}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                             </div>
-                            <p>Chet Faker</p>
+                            <p>{{mixerChannel?.user.username}}</p>
                         </div>
                     </div>
+                    <div class="col-xs-8 col-sm-6 col-md-3">
+                        <h4 class="images-title">{{mixerChannel?.token}} </h4>
+                        <img src="{{mixerChannel?.user.avatarUrl}}" class="img-rounded img-responsive" alt="Rounded Image">
+                        <div class="img-details">
+                            <div class="author">
+                                <img src="{{mixerChannel?.thumbnail.url}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <p>{{mixerChannel?.user.username}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table table-striped table-responsive-md btn-table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <button mdbBtn color="indigo" size="sm" mdbWavesEffect type="button" class="m-0">Button</button>
+                            </td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>
+                                <button mdbBtn color="indigo" size="sm" mdbWavesEffect type="button" class="m-0">Button</button>
+                            </td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>
+                                <button mdbBtn color="indigo" size="sm" mdbWavesEffect type="button" class="m-0">Button</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

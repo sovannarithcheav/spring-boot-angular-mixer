@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MixerChannelService} from "../../mixer-channel.service";
 import {MixerChannel} from "../../mixer-channel";
+import { WavesModule, TableModule } from 'angular-bootstrap-md';
 
 @Component({
     selector: 'app-typography',

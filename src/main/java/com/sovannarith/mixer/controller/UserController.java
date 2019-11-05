@@ -3,6 +3,7 @@ package com.sovannarith.mixer.controller;
 import com.mixer.api.MixerAPI;
 import com.sovannarith.mixer.model.User;
 import com.sovannarith.mixer.model.resource.MixerChannel;
+import com.sovannarith.mixer.model.response.channels.ShowChannelsResponse;
 import com.sovannarith.mixer.repository.UserRepository;
 import com.sovannarith.mixer.service.impl.ChannelsService;
 import org.springframework.web.bind.annotation.*;
@@ -21,14 +22,13 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
-    @GetMapping("/users")
-    public MixerChannel getUsers() throws ExecutionException, InterruptedException {
-        return channelsService.findOneByToken("ninja").get();
-    }
-/*
-    @GetMapping("/users")
-    public List<User> getUsers() {
-        return (List<User>) userRepository.findAll();
+        @GetMapping("/users")
+        public MixerChannel getUsers() throws ExecutionException, InterruptedException {
+            return channelsService.findOneByToken("ninja").get();
+        }
+/*    @GetMapping("/users")
+    public ShowChannelsResponse getUsers() throws ExecutionException, InterruptedException {
+        return channelsService.show(null, 0, 1).get();
     }*/
 
     @PostMapping("/users")
