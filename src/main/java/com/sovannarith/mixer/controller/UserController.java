@@ -1,6 +1,7 @@
 package com.sovannarith.mixer.controller;
 
 import com.mixer.api.MixerAPI;
+import com.mixer.api.http.SortOrderMap;
 import com.sovannarith.mixer.model.User;
 import com.sovannarith.mixer.model.resource.MixerChannel;
 import com.sovannarith.mixer.model.response.channels.ShowChannelsResponse;
@@ -22,14 +23,16 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
-        @GetMapping("/users")
+/*        @GetMapping("/users")
         public MixerChannel getUsers() throws ExecutionException, InterruptedException {
             return channelsService.findOneByToken("ninja").get();
-        }
-/*    @GetMapping("/users")
+        }*/
+    @GetMapping("/users")
     public ShowChannelsResponse getUsers() throws ExecutionException, InterruptedException {
-        return channelsService.show(null, 0, 1).get();
-    }*/
+        SortOrderMap<ShowChannelsResponse.Attributes, ShowChannelsResponse.Ordering> ordering = new SortOrderMap<>();
+        ordering.put(ShowChannelsResponse.Attributes.NUM_FOLLOWERS, ShowChannelsResponse.Ordering.DESCENDING);
+        return channelsService.show(ordering, 0, 5).get();
+    }
 
     @PostMapping("/users")
     void addUser(@RequestBody User user) {

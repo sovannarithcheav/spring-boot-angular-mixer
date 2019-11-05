@@ -14,8 +14,8 @@ export class MixerChannelService {
     this.usersUrl = 'http://localhost:8080/users';
   }
 
-  public findAll(): Observable<MixerChannel> {
-    return this.http.get<MixerChannel>(this.usersUrl);
+  public findAll(): Observable<MixerChannel[]> {
+    return this.http.get<MixerChannel[]>(this.usersUrl);
   }
 
 }
