@@ -31,7 +31,7 @@ public class UserController {
     public ShowChannelsResponse getUsers() throws ExecutionException, InterruptedException {
         SortOrderMap<ShowChannelsResponse.Attributes, ShowChannelsResponse.Ordering> ordering = new SortOrderMap<>();
         ordering.put(ShowChannelsResponse.Attributes.VIEWERS_TOTAL, ShowChannelsResponse.Ordering.DESCENDING);
-        return channelsService.show(ordering, 0, 50).get();
+        return channelsService.show(ordering, 0, 10).get();
     }
 
     @PostMapping("/users")
