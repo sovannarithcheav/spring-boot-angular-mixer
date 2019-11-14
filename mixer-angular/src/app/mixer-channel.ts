@@ -4,6 +4,7 @@ export class MixerChannel {
     numFollowers: number;
     viewersTotal: number;
     bannerUrl: string;
+    online: boolean;
     thumbnail: {
         url: string;
     };

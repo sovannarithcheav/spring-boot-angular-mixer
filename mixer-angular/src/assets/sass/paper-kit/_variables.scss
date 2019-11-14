@@ -105,6 +105,7 @@ $margin-base-vertical:         15px !default;
 
 // border radius for buttons
 $border-radius-none:             0px !default;
+$border-radius-btn-smaller:      10px !default;
 $border-radius-btn-small:      26px !default;
 $border-radius-btn-base:       20px !default;
 $border-radius-btn-large:      50px !default;
@@ -262,6 +263,8 @@ $background-light-grey:     #E8E7E3 !default;
 $background-lighter-grey:   #F0EFEB !default;
 $font-background-light-grey: #9C9B99 !default;
 $font-hover-background-light-grey: #5E5E5C !default;
+$grey-cccccc: #cccccc;
+$grey-595959: #595959;
 
 // variables used in headers
 $header-background:         #B2AFAB !default;

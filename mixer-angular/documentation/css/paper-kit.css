@@ -333,7 +333,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .navbar-transparent {
-  background-color: transparent !important;
+  background-color: #66615b !important;
   border-bottom: 1px solid transparent;
 }
 
@@ -2122,7 +2122,7 @@ textarea.form-control {
   position: absolute;
 }
 .navbar.navbar-transparent {
-  padding-top: 25px;
+  padding-top: 0px !important;
 }
 .navbar .logo-container {
   margin-top: 5px;
@@ -2460,7 +2460,7 @@ textarea.form-control {
 }
 
 .navbar-transparent {
-  background: transparent !important;
+  background: #66615b !important;
   border-bottom: 1px solid transparent;
   box-shadow: none;
 }
