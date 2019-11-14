@@ -1,6 +1,15 @@
-.collection-title{
-  h4{
+.collection-title {
+  h4 {
     font-weight: bold;
   }
 
+  li {
+    font-size: larger;
+    font-weight: bolder;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }

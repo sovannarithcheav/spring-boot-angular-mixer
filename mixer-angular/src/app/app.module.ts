@@ -36,6 +36,9 @@ import {MixerChannel} from "./mixer-channel";
         MixerChannel,
         MixerChannelService
     ],
+    exports: [
+        FooterComponent
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {
