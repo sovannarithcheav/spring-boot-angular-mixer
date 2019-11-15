@@ -1,11 +1,11 @@
 .collection-title {
-  h4 {
-    font-family: bptypewrite, serif;
-    color: #b58900;
-    font-weight: bold;
-  }
 
   li {
+    border: 1px solid;
+    border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+    border-image-slice: 1;
+    background-color: $solarized-dark;
+    color: $grey-93a1a1;
     font-size: larger;
     font-weight: bolder;
     width: 100%;

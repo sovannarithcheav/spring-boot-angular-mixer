@@ -1,4 +1,4 @@
-$font-color:                 #66615b !default;
+$font-color:                 #93a1a1 !default;
 $fill-font-color:            rgba(255, 255, 255, 0.8);
 $font-family-sans-serif:    "bptypewrite", Arial, sans-serif;
 
@@ -72,7 +72,7 @@ $light-green:                rgba($success-color, .2);
 $light-orange:               rgba($warning-color, .2);
 $light-red:                  rgba($danger-color, .2);
 
-
+$orange-b58900: #b58900;
 //== Components
 //
 $padding-base-vertical:         7px !default;
@@ -265,6 +265,8 @@ $font-background-light-grey: #9C9B99 !default;
 $font-hover-background-light-grey: #5E5E5C !default;
 $grey-cccccc: #cccccc;
 $grey-595959: #595959;
+$grey-93a1a1: #93a1a1;
+$solarized-dark: #002B39;
 
 // variables used in headers
 $header-background:         #B2AFAB !default;
