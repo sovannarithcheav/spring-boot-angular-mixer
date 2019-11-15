@@ -11,6 +11,19 @@ License - nucleoapp.com/license/
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+    font-family: 'belligan';
+    src: url('../fonts/belligan.regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bptypewrite';
+    src: url('../fonts/bptypewrite.regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*------------------------
 	base class definition
 -------------------------*/
