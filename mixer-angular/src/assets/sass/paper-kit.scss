@@ -35,7 +35,9 @@
 @import "paper-kit/card-articles";
 @import "paper-kit/collection";
 @import "paper-kit/footers";
-
+@import "paper-kit/cotent";
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/themes/prism-okaidia";
 
 // Bootstrap Switch
 @import "paper-kit/bootstrap-switch";

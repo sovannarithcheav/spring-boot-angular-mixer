@@ -17,6 +17,8 @@ import { NgbdModalContent } from './modal/modal.component';
 import {DailyArticlesComponent} from "./daily-articles/daily-articles.component";
 import {CollectionSeriesComponent} from "./collection-series/collection-series.component";
 import {PopularSitesComponent} from "./popular-sites/popular-sites.component";
+import {ProfileComponent} from "../pages/profile/profile.component";
+import {ContentComponent} from "../pages/content/content.component";
 
 @NgModule({
     imports: [
@@ -38,7 +40,9 @@ import {PopularSitesComponent} from "./popular-sites/popular-sites.component";
         NgbdModalContent,
         DailyArticlesComponent,
         CollectionSeriesComponent,
-        PopularSitesComponent
+        PopularSitesComponent,
+        ProfileComponent,
+        ContentComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

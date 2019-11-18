@@ -1,0 +1,62 @@
+.content-header {
+  text-align: center;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  .sub-content-header {
+    margin-top: 5px;
+
+    p {
+      border: 2px solid rgba(220, 57, 88, 0.15);
+      display: inline-block;
+      padding: 4.8px 12px;
+      border-radius: 6px;
+      margin-right: 20px;
+    }
+
+    .content-tag {
+      p {
+        margin-right: 5px;
+        font-size: x-small;
+      }
+    }
+
+    .content-tag p:hover {
+      color: #b58900;
+      font-weight: bold;
+    }
+  }
+
+  .sub-content-header p:hover {
+    border: 2px solid #d33682;
+  }
+}
+
+.content-body {
+  font-family: 'bptypewrite', Arial, sans-serif;
+
+  h3 {
+    padding-bottom: 20px;
+    display: flex;
+    color: $orange-b58900;
+    font-style: italic;
+  }
+
+  h3:after {
+    content: '';
+    flex: 1;
+    height: 3px;
+    border-top: solid transparent 1px;
+    background: linear-gradient(to right, rgba(32, 104, 130, 0.6) ,#003d4c);
+    margin : 25px 2px 0 3px;
+  }
+
+  .code {
+    padding: 20px;
+    font-family: "Fira Code Medium", serif;
+    border-left: 3px solid $orange-b58900;
+    background-color: #073642;
+  }
+}

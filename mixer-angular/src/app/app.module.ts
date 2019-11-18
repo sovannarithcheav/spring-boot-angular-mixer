@@ -10,10 +10,12 @@ import {NavbarComponent} from './shared/navbar/navbar.component';
 import {FooterComponent} from './shared/footer/footer.component';
 
 import {ComponentsModule} from './components/components.module';
-import {ExamplesModule} from './examples/examples.module';
+import {ExamplesModule} from './pages/examples.module';
 import {HttpClientModule} from "@angular/common/http";
 import {MixerChannelService} from "./mixer-channel.service";
 import {MixerChannel} from "./mixer-channel";
+import { ContentComponent } from './pages/content/content.component';
+import {HighlightService} from "./shared/utils/highlight.service";
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import {MixerChannel} from "./mixer-channel";
     ],
     providers: [
         MixerChannel,
-        MixerChannelService
+        MixerChannelService,
+        HighlightService
     ],
     bootstrap: [AppComponent]
 })

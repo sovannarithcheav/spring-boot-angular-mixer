@@ -15,7 +15,7 @@ export class DailyArticlesComponent implements OnInit {
         this.testTitle1 = "Creating a Spring Boot Project with Maven and Eclipse, Maven, Database.";
         this.testTitle2 = "Creating a Spring Boot Project with Eclipse and Maven.";
 
-        this.testContent1 = "Setting up a basic project with Spring Boot is a cake walk. In this article, we will explore the different options of creating Spring Boot Projects with Maven and Eclipse." +
+        this.testContent1 = "ថថSetting up a basic project with Spring Boot is a cake walk. In this article, we will explore the different options of creating Spring Boot Projects with Maven and Eclipse." +
             "Setting up a basic project with Spring Boot is a cake walk. In this article, we will explore the different options of creating Spring Boot Projects with Maven and Eclipse.";
         this.testContent2 = "Setting up a basic project with Spring Boot is a cake walk. In this article, we will explore the different options of creating Spring Boot Projects with Maven and Eclipse.";
     }

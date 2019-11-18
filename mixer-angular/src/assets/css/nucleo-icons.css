@@ -23,6 +23,19 @@ License - nucleoapp.com/license/
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'khmerRotanakTraiy';
+    src: url('../fonts/KhmerRotanakTraiy.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Code Medium';
+    src: url('../fonts/FiraCode-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*------------------------
 	base class definition
