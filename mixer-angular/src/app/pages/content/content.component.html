@@ -1,45 +1,7 @@
 <div class="wrapper">
     <div class="first-section section-solarized-dark">
-        <div class="container">
-            <div class="content-header">
-                <h2>A Guide to the Java LinkedList</h2>
-                <div class="sub-content-header">
-                    <p>July 19, 2019</p>
-                    <p>Baeldung (Content Testing)</p>
-                    <span class="content-tag">
-                        <p>#Java</p>
-                        <p>#Java Collection</p>
-                    </span>
-                </div>
-            </div>
-            <div class="content-body">
-                <h3>Introduction</h3>
-                <div class="sub-content-body">
-                    <p>LinkedList is a doubly-linked list implementation of the List and Deque interfaces. It implements
-                        all optional list operations and permits all elements (including null).</p>
-                </div>
-                <h3>Features</h3>
-                <div class="sub-content-body">
-                    <p>Below you can find the most important properties of the LinkedList:</p>
-                    <ul>
-                        <li>
-                            Operations that index into the list will traverse the list from the beginning or the end,
-                            whichever is closer to the specified index
-                        </li>
-                        <li>It is not synchronized</li>
-                        <li>Its Iterator and ListIterator iterators are fail-fast (which means that after the iterator's
-                            creation, if the list is modified, a ConcurrentModificationException will be thrown)
-                        </li>
-                        <li>Every element is a node, which keeps a reference to the next and previous ones</li>
-                        <li>It maintains insertion order</li>
-                    </ul>
-                    <p>Although LinkedList is not synchronized, we can retrieve a synchronized version of it by calling the Collections.synchronizedList method, like:</p>
-                    <div class="code">
-                        LinkedList&#60;Object&#62; linkedList = new LinkedList&#60;&#62;();
-                    </div>
+        <div class="container" [innerHTML]="htmlToAdd">
 
-                </div>
-            </div>
         </div>
         <app-collection-series></app-collection-series>
     </div>
