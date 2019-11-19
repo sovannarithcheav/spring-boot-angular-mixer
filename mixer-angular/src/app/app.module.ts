@@ -12,9 +12,10 @@ import {FooterComponent} from './shared/footer/footer.component';
 import {ComponentsModule} from './components/components.module';
 import {ExamplesModule} from './pages/examples.module';
 import {HttpClientModule} from "@angular/common/http";
-import {MixerChannelService} from "./mixer-channel.service";
-import {MixerChannel} from "./mixer-channel";
+import {MixerChannelService} from "./services/mixer/mixer-channel.service";
+import {MixerChannel} from "./services/mixer/mixer-channel";
 import { ContentComponent } from './pages/content/content.component';
+import {HtmlService} from "./services/html/html.service";
 import {HighlightService} from "./shared/utils/highlight.service";
 
 
@@ -37,7 +38,8 @@ import {HighlightService} from "./shared/utils/highlight.service";
     providers: [
         MixerChannel,
         MixerChannelService,
-        HighlightService
+        HighlightService,
+        HtmlService
     ],
     bootstrap: [AppComponent]
 })

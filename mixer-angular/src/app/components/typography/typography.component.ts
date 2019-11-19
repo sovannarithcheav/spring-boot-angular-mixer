@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {MixerChannelService} from "../../mixer-channel.service";
-import {MixerChannel} from "../../mixer-channel";
+import {MixerChannelService} from "../../services/mixer/mixer-channel.service";
+import {MixerChannel} from "../../services/mixer/mixer-channel";
 
 @Component({
     selector: 'app-typography',
